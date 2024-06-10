@@ -20,7 +20,7 @@ filterBtn.addEventListener("click", function(){
 
 function createPokemonCard(details){
     let type = details.types[0].type.name
-    let color = type === "water" ? "#0190FF" : (type ==="grass") ? "green" :""
+    let color = type === "water" ? "#0190FF" : (type ==="grass") ? "#A0CF59" :( type === "poison") ? "#BD86CC" : "";
     let card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
